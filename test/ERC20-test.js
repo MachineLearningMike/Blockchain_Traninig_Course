@@ -21,7 +21,7 @@ describe("Testing Pay Token", function () {
     expect(alice != bob && bob != charlie && charlie != alice);
   })
 
-  it("Alice deploys the PAY token with " + String(total_supply) + " Pays minted to her.", async function () {
+  it("Alice deploys the PAY token with " + String(total_supply) + " Pays minted to herself.", async function () {
     const Pay = await ethers.getContractFactory("Fixed_Token", alice);
     pay = await Pay.deploy("PAY Token", "PAY", ethers.BigNumber.from(total_supply).mul(bn_decimals), alice.address);
     await pay.deployed();

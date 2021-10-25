@@ -26,6 +26,7 @@ Courseware for Dapp development
 
     The following contracts come from a Hardhat sample project:
     - Greeter.sol
+    - Token.sol
 
     The following contracts are created now for demonstration:
     - OpenZeppelin_Fixed_Token.sol
@@ -42,3 +43,5 @@ Courseware for Dapp development
 
     The contracts will be compiled.
     The test scripts under the 'test' folder will be run.
+
+7. Investigate the test outputs
