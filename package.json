@@ -1,0 +1,36 @@
+{
+  "name": "project_blockchain_training_course",
+  "version": "1.0.0",
+  "description": "Courseware for Dapp development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MachineLearningMike/Blockchain_Traninig_Course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MachineLearningMike/Blockchain_Traninig_Course/issues"
+  },
+  "homepage": "https://github.com/MachineLearningMike/Blockchain_Traninig_Course#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.7",
+    "hardhat-gas-reporter": "^1.0.4",
+    "web3": "^1.6.0"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "dotenv": "^10.0.0",
+    "solidity-coverage": "^0.7.17"
+  }
+}
