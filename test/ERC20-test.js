@@ -32,6 +32,13 @@ describe("Testing Pay Token", function () {
     expect(await pay.balanceOf(alice.address)).to.equal(ethers.BigNumber.from(total_supply).mul(bn_decimals));
   });
 
+  it("alice's Pay balance is ...", async function () {
+    balance = await pay.balanceOf(alice.address);
+    balance = balance.div(bn_decimals);
+    balance = balance.toNumber();
+    console.log("alice's Pay balance: %", balance);
+  });
+
   it("bob's initial balance is 0 Pays.", async function () {
     expect(await pay.balanceOf(bob.address)).to.equal(0);
   });
@@ -47,22 +54,30 @@ describe("Testing Pay Token", function () {
     expect(await pay.balanceOf(bob.address)).to.equal(ethers.BigNumber.from(pays_aliceTransfersToBob).mul(bn_decimals));
   });
 
+  it("bob's Pay balance is ...", async function () {
+    balance = await pay.balanceOf(bob.address);
+    balance = balance.div(bn_decimals);
+    balance = balance.toNumber();
+    console.log("bob's Pay balance: %", balance);
+  });
+
   it("Alice can't transferFrom bob to chalie.", async function () {
     try{
       await pay_alice.transferFrom(bob.address, charlie.address, 1000).catch(expect(true).to.equal(true));
-      expect(true).to.equal(false);
+      expect(true).to.equal(false); // Once this line is invoked, it's an unexpected outcome.
     } catch {
-      expect(true).to.equal(true);
+      expect(true).to.equal(true); // If this line is invoked, it's an expected outcome.
     }
+
   });
 
   pays_aliceApprovesCharlie = 3000;
   it("alice Approves charlie to spend " + String(pays_aliceApprovesCharlie) + " Pays of her balance.", async function () {
     try{
       await pay_alice.approve(charlie.address, ethers.BigNumber.from(pays_aliceApprovesCharlie).mul(bn_decimals));
-      expect(true).to.equal(true);
+      expect(true).to.equal(true); // If this line is invoked, it's an expected outcome.
     } catch {
-      expect(true).to.equal(false);
+      expect(true).to.equal(false);  // Once this line is invoked, it's an unexpected outcome.
     }
   });
 
@@ -74,9 +89,9 @@ describe("Testing Pay Token", function () {
     pay_charlie = pay.connect(charlie);
     try{
       await pay_charlie.transferFrom(alice.address, dave.address, ethers.BigNumber.from(pays_aliceApprovesCharlie).mul(bn_decimals));
-      expect(true).to.equal(true);
+      expect(true).to.equal(true); // If this line is invoked, it's an expected outcome.
     } catch {
-      expect(true).to.equal(false)
+      expect(true).to.equal(false)  // Once this line is invoked, it's an unexpected outcome.
     }
   });
 
@@ -87,5 +102,4 @@ describe("Testing Pay Token", function () {
   it("dave's allowance is " + String(pays_aliceApprovesCharlie) + " Pays.", async function () {
     expect(await pay.balanceOf(dave.address)).to.equal(ethers.BigNumber.from(pays_aliceApprovesCharlie).mul(bn_decimals));
   });
-
 });
