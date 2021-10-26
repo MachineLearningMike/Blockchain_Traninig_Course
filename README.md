@@ -8,7 +8,7 @@ Courseware for Dapp development
     - npm init --yes
     - npm install --save-dev hardhat
     - npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
-    - npm i dotenv --save-dev
+    - npm i dotenv --save
     - npm i @nomiclabs/hardhat-etherscan --save-dev
     - npm install hardhat-gas-reporter --save-dev
     - npm i solidity-coverage --save-dev
