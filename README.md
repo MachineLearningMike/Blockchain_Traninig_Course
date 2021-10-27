@@ -7,17 +7,17 @@ Courseware for Dapp development
     Execute the following CLI's:
     - npm init --yes
     - npm install --save-dev hardhat
-    - npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+    - npm install --save @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
     - npm i dotenv --save
-    - npm i @nomiclabs/hardhat-etherscan --save-dev
-    - npm install hardhat-gas-reporter --save-dev
-    - npm i solidity-coverage --save-dev
+    - npm i @nomiclabs/hardhat-etherscan --save
+    - npm install hardhat-gas-reporter --save
+    - npm i solidity-coverage --save
 
-    - npm install --save-dev @nomiclabs/hardhat-web3 web3
+    - npm install --save @nomiclabs/hardhat-web3 web3
 
 3. Install node_modules.
     Execute the following CLI's:
-    - npm install @openzeppelin/contracts --save-dev
+    - npm install @openzeppelin/contracts --save
 
 
 4. Create contracts under the 'contracts' folder.
