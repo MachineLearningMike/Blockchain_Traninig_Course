@@ -3,7 +3,7 @@ Courseware for Dapp development
 
 1. Clone this repository to your local machine
 
-2. Setup node.js environment in the local folder:
+2. Setup hardhat environment in the local folder:
     Execute the following CLI's:
     - npm init --yes
     - npm install --save-dev hardhat
