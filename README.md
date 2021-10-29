@@ -7,6 +7,7 @@ Courseware for Dapp development
     Execute the following CLI's:
     - npm init --yes
     - npm install --save-dev hardhat
+    - npx hardhat <Select Create n advanced sample project>
     - npm install --save @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
     - npm i dotenv --save
     - npm i @nomiclabs/hardhat-etherscan --save
