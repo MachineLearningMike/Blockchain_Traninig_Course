@@ -5,42 +5,16 @@ Courseware for Dapp development
 
 2. Setup hardhat environment in the local folder:
     Execute the following CLI's:
-    - npm init --yes
+    // - npm init --yes //commented out, as node.js is alresdy intalled 
     - npm install --save-dev hardhat
-    - npx hardhat <Select Create n advanced sample project>
+    // - npx hardhat <Select Create n advanced sample project> //commented out, as a proejct is already installed 
     - npm install --save @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
     - npm i dotenv --save
     - npm i @nomiclabs/hardhat-etherscan --save
     - npm install hardhat-gas-reporter --save
     - npm i solidity-coverage --save
-
-    - npm install --save @nomiclabs/hardhat-web3 web3
+    - npm i hardhat-deploy --save
+    // - npm install --save @nomiclabs/hardhat-web3 web3 //commented out, as you'll not use web3 in this project.
 
 3. Install node_modules.
-    Execute the following CLI's:
-    - npm install @openzeppelin/contracts --save
 
-
-4. Create contracts under the 'contracts' folder.
-
-    The following contracts come from a Hardhat sample project:
-    - Greeter.sol
-    - Token.sol
-
-    The following contracts are created now for demonstration:
-    - OpenZeppelin_Fixed_Token.sol
-    - Token_WETH.sol
-
-5. Configure the project
-
-    Use my configuration 'hardhat.config.js' for the moment.
-
-6. Test
-    Execute the following CLI's:
-    - npx hardhat compile
-    - mpx hardhat test
-
-    The contracts will be compiled.
-    The test scripts under the 'test' folder will be run.
-
-7. Investigate the test outputs
