@@ -5,18 +5,18 @@ Courseware for Dapp development
 
 2. Setup hardhat environment in the local folder:
     Execute the following CLI's:
-    // - npm init --yes //commented out, as node.js is alresdy intalled 
+    // Do not - npm init --yes //, as node.js is alresdy intalled
     - npm install --save-dev hardhat
-    // - npx hardhat <Select Create n advanced sample project> //commented out, as a proejct is already installed 
+    // Do not - npx hardhat <Select Create n advanced sample project> //, as an existing project was already cloned to your folder.
     - npm install --save @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
     - npm i dotenv --save
     - npm i @nomiclabs/hardhat-etherscan --save
     - npm install hardhat-gas-reporter --save
-    - npm i solidity-coverage --save
+    - npm i solidity-coverage --savenpm i solidity-coverage --save
     - npm i hardhat-deploy --save
-    // - npm install --save @nomiclabs/hardhat-web3 web3 //commented out, as you'll not use web3 in this project.
+    // Do not - npm install --save @nomiclabs/hardhat-web3 web3 //, as you'll not use web3 in this project.
 
 3. Install node_modules.
     
     // If you don't see openzeppelin in node_modules folder,
-    - npm install @openzeppelin/contracts-upgradeable
+    - npm install @openzeppelin/contracts
