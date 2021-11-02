@@ -7,14 +7,20 @@ Courseware for Dapp development
     Execute the following CLI's:
     // Do not - npm init --yes //, as node.js is alresdy intalled
     - npm install --save-dev hardhat
-    // Do not - npx hardhat <Select Create n advanced sample project> //, as an existing project was already cloned to your folder.
-    - npm install --save @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
-    - npm i dotenv --save
-    - npm i @nomiclabs/hardhat-etherscan --save
-    - npm install hardhat-gas-reporter --save
-    - npm i solidity-coverage --savenpm i solidity-coverage --save
-    - npm i hardhat-deploy --save
-    // Do not - npm install --save @nomiclabs/hardhat-web3 web3 //, as you wont be using web3 in this project.
+    // Do not - npx hardhat <Select Create n advanced sample project> //, as you should keep the cloned project.
+
+    - ... npm install --save @nomiclabs/hardhat-ethers
+    - npm install --save ethers
+    - ... npm install --save @nomiclabs/hardhat-waffle
+    
+    - ... npm install --save ethereum-waffle
+    - ... npm install --save chai
+    - npm install --save dotenv
+    - npm ... install --save @nomiclabs/hardhat-etherscan
+    - npm install --save hardhat-gas-reporter
+    - npm install solidity-coverage --savenpm install solidity-coverage --save
+    - npm install hardhat-deploy --save
+    // Do not - npm install --save @nomiclabs/hardhat-web3 web3 //, as you wont be using web3 for this project.
 
 3. Install node_modules.
     
