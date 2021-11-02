@@ -1,7 +1,12 @@
 # Blockchain_Traninig_Course
 Courseware for Dapp development
 
-1. Clone this repository to your local machine
+I.  Description
+
+
+II. Installation
+
+1. Clone this repository to your local machine.
 
 2. Setup compilation/testing env in the local folder (All are necessary and nothing is optional):
 
