@@ -14,7 +14,7 @@ Courseware for Dapp development
     - npm install hardhat-gas-reporter --save
     - npm i solidity-coverage --savenpm i solidity-coverage --save
     - npm i hardhat-deploy --save
-    // Do not - npm install --save @nomiclabs/hardhat-web3 web3 //, as you'll not use web3 in this project.
+    // Do not - npm install --save @nomiclabs/hardhat-web3 web3 //, as you wont be using web3 in this project.
 
 3. Install node_modules.
     
